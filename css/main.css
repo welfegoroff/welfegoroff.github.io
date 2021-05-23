@@ -1,0 +1,852 @@
+body, ul, li, h2, h3 {
+    margin: 0;
+    padding: 0;
+    font: 16px 'Open Sans', sans-serif;
+    color: #fff;
+}
+
+a {
+    text-decoration: none;
+    color: #fff;
+}
+
+.wrapper {
+    max-width: 1200px;
+    margin: 0 auto;
+    height: 100%;
+}
+
+/* Header styles start */
+/** Header main styles **/
+header {
+    height: 100vh;
+    background: url("../img/vk-image.jpg") bottom / cover;
+}
+
+.header-elements {
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+}
+
+/** Header nav panel settings start **/
+.header-elements nav {
+    background-color: rgba(0, 0, 0, .1);
+    border-radius: 50px;
+    width: 100%;
+    height: 60px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px;
+}
+
+/*** Header nav panel logo styles ***/
+.header-elements .header-logo img {
+    width: 55px;
+    height: 55px;
+}
+
+/*** Header nav panel menu styles start ***/
+.header-elements nav ul {
+    display: flex;
+    list-style: none;
+    height: 60px;
+}
+
+.header-elements nav ul li {
+    height: 100%;
+    padding-right: 60px;
+    font-size: 12px;
+    font-weight: bold;
+    letter-spacing: 1px;
+    display: flex;
+    align-items: center;
+}
+
+.header-elements nav ul li:last-child {
+    padding-right: 0;
+}
+/*** Header nav panel menu styles end ***/
+
+/*** Header nav panel settings styles start ***/
+.header-elements nav .header-settings {
+    font-size: 12px;
+    color: #fff;
+    font-weight: bold;
+    letter-spacing: 1px;
+    display: flex;
+    align-items: center;
+}
+
+.header-elements nav .header-settings .header-len {
+    margin-right: 5px;
+}
+
+.header-elements nav .header-settings img {
+    margin-right: 30px;
+}
+
+.header-elements nav .header-settings a {
+    padding-left: 30px;
+    border-left: 1px solid #fff;
+}
+
+.header-elements nav .header-settings a:last-child {
+    margin-right: 0;
+}
+/*** Header nav panel settings styles end ***/
+/** Header nav panel settings end **/
+
+/** Header center block styles start **/
+.header-elements .header-center-block {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.header-elements .header-center-block h2 {
+    text-shadow: #000 0px 0px 10px;
+    font: 80px 'Bebas Neue'; 
+    letter-spacing: 3px;
+    font-weight: bold;
+}
+
+.header-elements .header-center-block h3 {
+    text-shadow: #000 0px 0px 10px;
+    font: 24px 'Bebas Neue'; 
+    letter-spacing: 2px;
+    font-weight: bold;
+}
+
+/*** Header center button styles start **/
+.header-elements .header-center-block .header-buy-button {
+    margin-top: 25px;
+    font-weight: bold;
+    padding: 20px;
+    border-radius: 4px;
+    color: #000;
+    background: linear-gradient(194.68deg, #FFB548 11.27%, #F3AF34 90.4%);
+}
+
+.header-elements .header-center-block .header-buy-button  .header-buy-button-text {  
+    padding-right: 5px;
+}
+.header-elements .header-center-block .header-buy-button  .header-buy-button-price { 
+    padding-left: 15px;
+    border-left: 1px solid #1A1917
+} 
+/*** Header center button styles end **/
+/** Header center block styles end **/
+
+/** Header bottom slider styles start **/
+.header-elements .header-bottom-button {
+    margin-bottom: 50px;
+}
+
+.header-elements .header-bottom-button .header-bottom-button-slider {
+    display: flex;
+    flex-direction: column;
+    align-items: center;;
+}
+
+.header-elements .header-bottom-button .header-bottom-button-slider span {
+    font-size: 12px;
+    font-weight: bold;
+    margin-bottom: 10px;
+}
+
+.header-elements .header-bottom-button .header-bottom-button-slider img {
+    width: 20px;
+    height: auto;
+}
+/** Header bottom slider styles end **/
+/* Header styles end */
+
+
+
+/* About styles start */
+.about {
+    position: relative;
+    height: 100vh;
+    min-height: 950px;
+    background-color: #080a0b;
+}
+
+.about-elements {
+    min-height: 950px;
+    height: 100vh;
+    position: relative;
+    z-index: 3;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: auto;
+    grid-template-areas: 
+        "text slider";
+    padding-top: 150px;
+    justify-content: space-between;
+}
+
+.about-text h2 {
+    font: 80px 'Bebas Neue'; 
+    letter-spacing: 3px;
+    font-weight: bold;
+}
+
+.about-text h3 {
+    font: 24px 'Bebas Neue'; 
+    letter-spacing: 2px;
+    font-weight: bold;
+}
+
+.about-text-title {
+    text-shadow: #000 0px 0px 10px;
+    max-width: 450px;
+    padding-top: 100px;
+    position: relative;
+}
+
+.about-text-p {
+    padding: 10px;
+    border-radius: 25px;
+    text-shadow: #000 0px 0px 10px;
+    display: flex;
+    max-width: 360px;
+    float: right;
+}
+
+.about-line {
+    content: '';
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    border-bottom: 4px solid #fff;
+    width: 120%;
+    z-index: 5;
+}
+
+/* About styles end */
+
+
+/* Quotes styles start */
+.quotes {
+    min-height: 950px;
+    position: relative;
+    max-height: 100vh;
+    background: url("../img/vk-net.jpg") center / cover;
+}
+
+.quotes:after {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: radial-gradient(70.52% 37.27% at 24.21% 47.47%, rgba(255, 255, 255, 0) 0%, rgba(0, 0, 0, 0) 51.1%, #080A0B 99.74%);
+    z-index: 2;
+}
+
+.quotes-elements {
+    height: 100%;
+    display: flex;
+    position: relative;
+    z-index: 3;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.quotes-text {
+    border-radius: 50px;
+    padding: 40px;
+    max-width: 450px;
+    text-shadow: #000 0px 0px 10px;
+    background-color: rgba(0, 0, 0, .5);
+}
+
+.quotes-text h2 {
+    font: 80px 'Bebas Neue'; 
+    letter-spacing: 3px;
+    font-weight: bold;
+    padding-bottom: 40px;
+}
+
+.quotes-text h3 {
+    font: 24px 'Bebas Neue'; 
+    letter-spacing: 2px;
+    font-weight: bold;
+}
+
+.quotes-text span {
+    font-size: 18px;
+}
+
+.quotes-text-button {
+    display: inline-block;
+    margin-top: 50px;
+    font-weight: bold;
+    padding: 20px 30px;
+    border-radius: 4px;
+    color: #000;
+    background: linear-gradient(194.68deg, #FFB548 11.27%, #F3AF34 90.4%);
+}
+
+.quotes-blocks {
+    display: flex;
+    flex-direction: column;
+}
+
+.quotes-block {
+    width: 400px;
+    height: 180px;
+    border-radius: 10px;
+    margin-bottom: 30px;
+    padding: 15px;
+    margin-bottom: 15px;
+}
+
+.quotes-right-block {
+    background: #1a1b1c;
+}
+
+.quotes-left-block {
+    position: relative;
+    padding-bottom: 0;
+}
+
+.quotes-left-block-absolute {
+    background: #1a1b1c;
+    position: absolute;
+    top: 0;
+    left: -140px;
+}
+
+.comment-title {
+    display: flex;
+    justify-content: space-between;
+    align-items: start;
+    padding-bottom: 15px;
+}
+
+.comment-title .twitter-img {
+    padding: 10px 5px 0 0;
+}
+
+.comment-title-person .comment-img {
+    background: url("../img/mgoreev.jpg") center / cover;
+    height: 65px;
+    width: 65px;
+    border-radius: 50px;
+}
+
+.comment-title-person .img-mgoreev {
+    background: url("../img/mgoreev.jpg") center / cover;
+}
+
+.comment-title-person .img-aalipov {
+    background: url("../img/aalipov.jpg") center / cover;
+}
+
+.comment-title-person .img-alatishev {
+    background: url("../img/alatishev.jpg") center / cover;
+}
+
+.comment-title-person .img-kmikolosyuk {
+    background: url("../img/kmikolosiuk.jpg") center / cover;
+}
+
+.comment-title-person {
+    display: flex;
+}
+
+.comment-profile {
+    display: flex;
+    flex-direction: column;
+    padding: 5px 0 0 25px;
+    text-shadow: #000 0px 0px 10px;
+}
+
+.comment-name {
+    font: 24px 'Bebas Neue'; 
+    letter-spacing: 2px;
+    font-weight: bold;
+    color: #FFB548;
+}
+
+.comment-name-desc {
+    color: grey;
+}
+
+.comment-desc {
+    display: block;
+    padding: 10px 0;
+    color: grey;
+    font-size: 12px;
+}
+/* Quotes styles end */
+
+
+
+/* Footer styles start */
+footer {
+    background: #080A0B;
+    height: 100vh;
+    min-height: 950px;
+}
+
+.footer-elements {
+    min-height: 950px;
+    display: flex;
+    flex-direction: column;
+    height: 100vh;
+    justify-content: flex-end;
+}
+
+.footer-elements .footer-info {
+    border-top: 1px solid rgba(255, 255, 255, .5);
+    padding: 20px 0 50px 0;
+    display: flex;
+    justify-content: space-between;
+}
+
+.footer-desc {
+    font-size: 14px;
+    color: grey;
+}
+
+.footer-policy {
+    font-size: 12px;
+    font-weight: bold;
+    text-transform: uppercase;
+}
+
+.footer-elements nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-end;
+    padding-bottom: 30px;
+}
+
+.footer-elements nav ul {
+    list-style: none;
+    display: flex;
+    padding-bottom: 15px;
+}
+
+.footer-elements nav ul li {
+    font-weight: bold;
+    font-size: 12px;
+    padding-right: 40px;
+}
+
+.footer-elements nav ul li:last-child {
+    padding-right: 0;
+}
+
+.footer-logo img {
+    width: 90px;
+    height: 90px;
+}
+
+.footer-links a {
+    display: inline-block;
+    margin-left: 50px;
+    padding-bottom: 10px;
+}
+
+.footer-links a:first-child { 
+    margin-left: 0;
+}
+
+.footer-youtube-wrapper {
+    position: relative;
+}
+
+.footer-sub {
+    display: flex;
+}
+
+.footer-text {
+    display: flex;
+    flex-direction: column;;
+    justify-content: center;
+    max-width: 700px;
+}
+
+.footer-text h2 {
+    font: 80px 'Bebas Neue'; 
+    letter-spacing: 3px;
+    font-weight: bold;
+    padding-bottom: 40px;
+}
+
+.footer-text h3 {
+    font: 24px 'Bebas Neue'; 
+    letter-spacing: 2px;
+    font-weight: bold;
+}
+
+.footer-sub .skull-img {
+    margin: 30px;
+    max-width: 413px;
+    height: 656px;
+    content: '';
+    background: url(../img/test.jpg) center / cover;
+    padding-left: 40px;
+    position: relative;
+
+}
+
+
+.footer-input {
+    background-color: #1c1e1f;
+}
+
+.footer-button-label {
+    position: relative;
+}
+
+.form-input-desc {
+    font-size: 14px;
+    color: grey;
+    position: absolute;
+    top: 25px;
+    left: 20px;
+    width: 150px;
+}
+
+.form-input-desc:hover {
+    cursor: text;
+}
+
+.form-input {
+    background-color: #1c1e1f;
+    border: none;
+    padding: 30px 110px 10px 20px;
+    color: #ffb528;
+    font-size: 18px;
+    border-radius: 5px;
+    height: 60px;
+    width: 400px;
+}
+
+.footer-text form {
+    padding-top: 50px;
+}
+
+.footer-text-button {
+    width: 250px;
+    border: none;
+    margin-top: 2px;
+    height: 60px;
+    display: inline-block;
+    font-weight: bold;
+    padding: 20px 60px;
+    border-radius: 4px;
+    color: #000;
+    background: linear-gradient(194.68deg, #FFB548 11.27%, #F3AF34 90.4%);
+}
+
+.footer-text-button:hover {
+    cursor: pointer;
+}
+
+.footer-inputs {
+    height: 60px;
+    display: flex;
+    justify-content: space-between;
+}
+
+.skull-img:after {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: radial-gradient(45.43% 53.19% at 50% 50%, rgba(255, 255, 255, 0) 0%, rgba(0, 0, 0, 0) 46.15%, #080A0B 99.74%);
+    z-index: 4;
+}
+/* Footer styles end */
+
+
+/*! Flickity v2.2.2
+https://flickity.metafizzy.co
+---------------------------------------------- */
+
+.flickity-enabled {
+  position: relative;
+}
+
+.flickity-enabled:focus { outline: none; }
+
+.flickity-viewport {
+  overflow: hidden;
+  position: relative;
+  height: 100%;
+}
+
+.flickity-slider {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+}
+
+/* draggable */
+
+.flickity-enabled.is-draggable {
+  -webkit-tap-highlight-color: transparent;
+  -webkit-user-select: none;
+     -moz-user-select: none;
+      -ms-user-select: none;
+          user-select: none;
+}
+
+.flickity-enabled.is-draggable .flickity-viewport {
+  cursor: move;
+  cursor: -webkit-grab;
+  cursor: grab;
+}
+
+.flickity-enabled.is-draggable .flickity-viewport.is-pointer-down {
+  cursor: -webkit-grabbing;
+  cursor: grabbing;
+}
+
+/* ---- flickity-button ---- */
+
+.flickity-button {
+  position: absolute;
+  background: hsla(0, 0%, 100%, 0.75);
+  border: none;
+  color: #fff;
+}
+
+.flickity-button:hover {
+  background: white;
+  cursor: pointer;
+}
+
+.flickity-button:focus {
+  outline: none;
+  box-shadow: 0 0 0 5px #19F;
+}
+
+.flickity-button:active {
+  opacity: 0.6;
+}
+
+.flickity-button:disabled {
+  opacity: 0.3;
+  cursor: auto;
+  /* prevent disabled button from capturing pointer up event. #716 */
+  pointer-events: none;
+}
+
+.flickity-button-icon {
+  fill: currentColor;
+}
+
+/* ---- previous/next buttons ---- */
+
+.flickity-prev-next-button {
+  top: 50%;
+  width: 44px;
+  height: 44px;
+  border-radius: 50%;
+  /* vertically center */
+  transform: translateY(-50%);
+}
+
+.flickity-prev-next-button.previous { left: 10px; }
+.flickity-prev-next-button.next { right: 10px; }
+/* right to left */
+.flickity-rtl .flickity-prev-next-button.previous {
+  left: auto;
+  right: 10px;
+}
+.flickity-rtl .flickity-prev-next-button.next {
+  right: auto;
+  left: 10px;
+}
+
+.flickity-prev-next-button .flickity-button-icon {
+  position: absolute;
+  left: 20%;
+  top: 20%;
+  width: 60%;
+  height: 60%;
+}
+
+/* ---- page dots ---- */
+
+.flickity-page-dots {
+  position: absolute;
+  width: 100%;
+  bottom: -25px;
+  padding: 0;
+  margin: 0;
+  list-style: none;
+  text-align: center;
+  line-height: 1;
+}
+
+.flickity-rtl .flickity-page-dots { direction: rtl; }
+
+.flickity-page-dots .dot {
+  display: inline-block;
+  width: 10px;
+  height: 10px;
+  margin: 0 8px;
+  background: #fff;
+  border-radius: 50%;
+  opacity: 0.25;
+  cursor: pointer;
+  box-shadow: #000 0 0 10px;
+}
+
+.flickity-page-dots .dot.is-selected {
+  opacity: 1;
+}
+
+/* external css: flickity.css */
+
+* {
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+}
+
+body { font-family: sans-serif; }
+
+.gallery {
+  background: #EEE;
+}
+
+.gallery-cell {
+  width: 66%;
+  height: 650px;
+  background: url(../img/screenshot1.jpg) center / cover;
+}
+
+.cell-1 {
+    background: url(../img/img1.jpeg) center / cover;
+}
+
+.cell-2 {
+    background: url(../img/img2.jpeg) center / cover;
+}
+
+.cell-3 {
+    background: url(../img/img3.jpeg) center / cover;
+}
+
+.slider {
+    padding-left: 30px;
+}
+
+
+
+
+.form-item {
+  position: relative;
+  display: flex;
+  justify-content: space-between;
+}
+
+label {
+    color: #aaa;
+    position: absolute;
+    left: 10px;
+    top: 43px;
+    transition: top 0.5s;
+}
+input:focus+label,
+input:not(:placeholder-shown)+label,
+textarea:focus+label,
+textarea:not(:placeholder-shown)+label {
+  top: 10px;
+}
+
+
+/* Start wrapper styles position + header img position (Media query for less then 1023px devices) */
+@media (max-width: 1023px) {
+    .footer-elements nav ul li {
+        padding-right: 10px;
+    }
+
+    .footer-elements nav ul li:last-child {
+        padding-right: 0;
+    }
+
+    .footer-links a {
+        margin-left: 10px;
+    }
+
+    .header-elements nav ul li {
+        padding-right: 10px;
+    }
+
+    .header-elements nav ul li:last-child {
+        padding-right: 0;
+    }
+
+    .footer-sub .skull-img {
+        margin: 10px;
+        max-width: 300px;
+    }
+    .form-input {
+        width: 55%;
+    }
+
+    .quotes-elements {
+        flex-direction: column;
+    }
+    .quotes {
+        padding-bottom: 1750px;
+    }
+    .quotes-left-block-absolute {
+        left: 0;
+    }
+
+}
+
+
+@media (max-width: 700px) {
+    .form-item {
+        flex-direction: column;
+    }
+
+    .form-input {
+        min-width: 250px;
+    }
+    .header-elements a {
+        margin-left: 0;
+        margin-right: 0;
+        padding-left: 0;
+    }
+
+    .header-elements nav .header-settings a {
+        padding-left: 0;
+    }
+
+    .header-elements nav {
+        margin: 0;
+        padding: 0;
+    }
+
+    .about-elements {
+        display: block;
+    }
+
+    .about-elements .slider {
+        display: none;
+    }
+
+    .about-text-title h2 {
+        font-size: 60px;
+        width: 350px;
+    }
+
+}
